@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-
+![image](https://github.com/shareefrossetti/professional_portfolio/assets/64225836/93f9c032-f366-489b-aee7-99a075006d5e)
 
 Built using:
 
