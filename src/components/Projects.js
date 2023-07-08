@@ -6,41 +6,61 @@ import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { Link } from 'react-router-dom';
 
 export const Projects = () => {
+
+
+
 
   const projects = [
     {
       title: "Youtube Clone",
       description: "A Youtube Clone built with React JS and Material UI",
       imgUrl: projImg1,
+      id: 1,
     },
     {
-      title: "Business Startup",
+      title: "Recipe Search",
       description: "Design & Development",
       imgUrl: projImg2,
+      id: 2,
     },
     {
-      title: "Business Startup",
+      title: "Shoppy Admin Dashboard",
       description: "Design & Development",
       imgUrl: projImg3,
+      id: 3,
     },
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg1,
+      // imgUrl: projImg4,
+      id: 4,
     },
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg2,
+      // imgUrl: projImg5,
     },
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg3,
+      // imgUrl: projImg6,
     },
   ];
+
+  const handleClick = (e) => {
+    // console.log(projects, e.target.innerHTML)
+      if (e.target.innerHTML === projects[0].title) window.location.href = 'https://youtubeclone-sr.netlify.app/';
+      if (e.target.innerHTML === projects[1].title) window.location.href = 'https://recipe-search-sr.netlify.app/';
+      if (e.target.innerHTML === projects[2].title) window.location.href = 'https://shoppy-dashboard-sr.netlify.app/';
+    };
+
+
+
+
+
 
   return (
     <section className="project" id="projects">
@@ -73,6 +93,7 @@ export const Projects = () => {
                               <ProjectCard
                                 key={index}
                                 {...project}
+                                  onClick={handleClick}
                                 />
                             )
                           })
