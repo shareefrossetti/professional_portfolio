@@ -42,10 +42,6 @@ export const Projects = () => {
     };
 
 
-
-
-
-
   return (
     <section className="project" id="projects">
       <Container>
