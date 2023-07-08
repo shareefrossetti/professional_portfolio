@@ -27,26 +27,10 @@ export const Projects = () => {
       id: 2,
     },
     {
-      title: "Shoppy Admin Dashboard",
+      title: "Admin Dashboard",
       description: "Design & Development",
       imgUrl: projImg3,
       id: 3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      // imgUrl: projImg4,
-      id: 4,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      // imgUrl: projImg5,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      // imgUrl: projImg6,
     },
   ];
 
