@@ -11,8 +11,8 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Youtube Clone",
+      description: "A Youtube Clone built with React JS and Material UI",
       imgUrl: projImg1,
     },
     {
